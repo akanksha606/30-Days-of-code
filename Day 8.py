@@ -1,0 +1,14 @@
+#Day 8(Dictionaries and Maps)
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+d = {}
+for z in range(n):
+    x = input().split()
+    d[x[0]] = x[1]
+while True:
+    try:
+        name = input()
+        if name in d:
+            print(name, "=", d[name], sep="")
+        else : print("Not found")   
+    except: break
